@@ -1,0 +1,25 @@
+---
+version: 4
+datadir: hieradata
+hierarchy:
+        - name: "local overrides"
+          backend: yaml
+          datadir: /data
+          path: "test"
+        - name: "Compat path"
+          backend: yaml
+          paths:
+                  - 'hosts/%{trusted.certname}'
+                  - 'hosts/%{::fqdn}'
+                  - 'hosts/%{::hostname}'
+                  - 'domains/%{::domain}'
+                  - '%{::osfamily}'
+                  - '%{::operatingsystem}/%{::operatingsystemrelease}'
+                  - '%{::operatingsystem}/%{::operatingsystemmajrelease}'
+                  - '%{::operatingsystem}'
+                  - 'hostgroups/%{::hostgroup}'
+                  - 'default'
+                  - 'compliance_profiles/%{compliance_profile}'
+                  - 'simp_classes'
+                  - 'simp_def'
+                  - 'simp/%{module_name}/default'

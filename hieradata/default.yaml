@@ -1,0 +1,50 @@
+---
+# SIMP Global Catalysts
+use_iptables : false
+enable_pki   : false
+use_haveged  : false
+use_ldap     : false
+
+# Classes
+classes:
+  - 'site::vagrant_user'
+  - 'epel'
+
+# Everything else
+
+clamav::enable_freshclam: true
+
+domains:
+  - test
+dns::servers:
+  - 8.8.8.8
+dns::search:
+  - test
+
+puppet::server: 'puppet-mom1.test'
+
+simp::server::enable_puppetdb: false
+simp::yum::enable_os_repos: false
+simp::yum::simp_update_url: 'https://packagecloud.io/simp-project/6_X_Alpha/el/7/$basearch'
+simp::yum::simp_dependencies_update_url: 'https://packagecloud.io/simp-project/6_X_Alpha_Dependencies/el/7/$basearch'
+simp::yum::simp_gpg_url: 'https://raw.githubusercontent.com/NationalSecurityAgency/SIMP/master/GPGKEYS/RPM-GPG-KEY-SIMP https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6 https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7 https://grafanarel.s3.amazonaws.com/RPM-GPG-KEY-grafana https://packages.elastic.co/GPG-KEY-elasticsearch file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7'
+
+simplib::cron::use_rsync: false
+simplib::sudoers::default_entry:
+  - 'listpw=all'
+  - 'requiretty'
+  - 'syslog=authpriv'
+  - '!umask'
+  - 'env_reset'
+  - 'secure_path = /usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin'
+  - >
+    env_keep = "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS MAIL
+    PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION
+    LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER
+    LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+
+svckill::ignore:
+  - '^pe-.*'
+  - 'vboxadd'
+  - 'vboxadd-service'
+  - 'vboxadd-x11'
