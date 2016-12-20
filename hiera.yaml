@@ -4,7 +4,7 @@ datadir: data
 hierarchy:
         - name: "local overrides"
           backend: yaml
-          datadir: /data
+          datadir: /data/hiera
           path: "test"
         - name: "Compat path"
           backend: yaml
