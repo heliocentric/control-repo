@@ -1,23 +1,5 @@
 # refs recorded for SIMP release 5.1.0-2
 
-moduledir 'src'
-
-mod 'simp-doc',
-  :git => 'https://github.com/simp/simp-doc',
-  :ref => 'master'
-
-mod 'simp-rsync',
-  :git => 'https://github.com/simp/simp-rsync',
-  :ref => 'simp-5.1.X'
-
-moduledir 'src/rubygems'
-
-mod 'rubygem-simp_cli',
-  :git => 'https://github.com/simp/rubygem-simp-cli',
-  :ref => 'master'
-
-moduledir 'src/puppet/modules'
-
 mod 'bfraser-grafana',
   :git => 'https://github.com/simp/puppet-grafana',
   :ref => 'simp-master'
