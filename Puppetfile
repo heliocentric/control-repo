@@ -135,7 +135,7 @@ mod 'simp-autofs',
 
 mod 'simp-clamav',
   :git => 'https://github.com/simp/pupmod-simp-clamav',
-  :ref => 'master'
+  :ref => 'feature/SIMP-2330'
 
 mod 'simp-simpcat',
   :git => 'https://github.com/simp/pupmod-simp-concat',
