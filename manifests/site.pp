@@ -11,16 +11,21 @@ Exec {
   ],
 }
 
+$compliance_profile = 'nist_800_53_rev4'
+
+unless getvar('::hostgroup') {
+  $hostgroup = 'default'
+}
+
+$hiera_classes          = lookup('classes',          Array[String], 'unique', [])
+$hiera_class_exclusions = lookup('class_exclusions', Array[String], 'unique', [])
+$hiera_include_classes  = $hiera_classes - $hiera_class_exclusions
+
 node default {
-  $compliance_profile = 'nist_800_53_rev4'
-
-  unless getvar('::hostgroup') {
-    $hostgroup = 'default'
-  }
-
-  $hiera_classes          = lookup('classes',          Array[String], 'unique', [])
-  $hiera_class_exclusions = lookup('class_exclusions', Array[String], 'unique', [])
-  $hiera_include_classes  = $hiera_classes - $hiera_class_exclusions
 
   #include $hiera_include_classes
-}
+  }
+  node agent.test {
+    include $hiera_include_classes
+
+  }
