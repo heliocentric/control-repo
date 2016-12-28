@@ -23,9 +23,10 @@ $hiera_include_classes  = $hiera_classes - $hiera_class_exclusions
 
 node default {
 
-  #include $hiera_include_classes
-  }
-  node agent.test {
-    include $hiera_include_classes
-
-  }
+}
+node agent.test {
+  include $hiera_include_classes
+}
+node mom2.test {
+  include $hiera_include_classes
+}

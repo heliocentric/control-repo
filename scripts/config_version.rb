@@ -18,7 +18,7 @@ else
   #the commit message associated the newest commit
   commit = repo.lookup(head_sha)
 
-  #add something to find the remote url
+ #add something to find the remote url
 
   puts head_sha 
 end
