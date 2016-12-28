@@ -8,7 +8,6 @@ use_ldap     : false
 
 # Classes
 classes:
-  - 'site::vagrant_user'
   - 'epel'
 class_exclusions:
   - "pupmod"
