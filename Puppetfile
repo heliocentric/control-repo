@@ -1,3 +1,4 @@
+# vim: set expandtab sw=2 ts=2:
 # refs recorded for SIMP release 5.1.0-2
 
 mod 'bfraser-grafana',
@@ -359,3 +360,7 @@ mod 'simp-xinetd',
 mod 'simp-compliance_markup',
   :git => 'https://github.com/simp/pupmod-simp-compliance_markup',
   :ref => 'master'
+mod 'epel',
+  :git => 'https://github.com/stahnma/puppet-module-epel',
+  :ref => '292ff3311d5348a2449a53f8643dd20e43be52f1'
+
