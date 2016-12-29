@@ -30,3 +30,4 @@ node agent.test {
 node mom2.test {
   #  include $hiera_include_classes
 }
+notify { "puppet master serverversion: $::serverversion": }

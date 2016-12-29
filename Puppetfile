@@ -258,7 +258,7 @@ mod 'simp-postfix',
   :ref => 'master'
 
 mod 'simp-pupmod',
-  :git => 'https://github.com/simp/pupmod-simp-pupmod',
+  :git => 'https://github.com/heliocentric/pupmod-simp-pupmod',
   :ref => 'master'
 
 mod 'simp-puppetdb',
@@ -326,7 +326,7 @@ mod 'simp-sudosh',
   :ref => 'master'
 
 mod 'simp-svckill',
-  :git => 'https://github.com/simp/pupmod-simp-svckill',
+  :git => 'https://github.com/heliocentric/pupmod-simp-svckill',
   :ref => 'master'
 
 mod 'simp-tcpwrappers',
