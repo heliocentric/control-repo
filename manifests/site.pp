@@ -28,7 +28,6 @@ node mom1.test {
   $services = [
     "pe-puppetserver",
     "pe-puppetdb",
-    "pe-postgresql",
     "pe-orchestration-services",
     "pe-activemq",
   ]
