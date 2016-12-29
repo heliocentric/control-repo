@@ -30,7 +30,6 @@ node mom1.test {
     "pe-nginx",
     "pe-puppetdb",
     "pe-postgresql",
-    "pe-console-services",
     "pe-orchestration-services",
     "pe-activemq",
   ]
