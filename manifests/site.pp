@@ -24,6 +24,18 @@ $hiera_include_classes  = $hiera_classes - $hiera_class_exclusions
 node default {
 
 }
+node mom1.test {
+  $services = [
+    "pe-puppetserver",
+    "pe-nginx",
+    "pe-puppetdb",
+    "pe-postgresql",
+    "pe-console-services",
+    "pe-orchestration-services",
+    "pe-activemq",
+  ]
+  service { $services: }
+}
 node agent.test {
   #  include $hiera_include_classes
 }
