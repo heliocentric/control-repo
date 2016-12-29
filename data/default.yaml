@@ -44,7 +44,6 @@ simplib::sudoers::default_entry:
     LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
 
 svckill::ignore:
-  - '^pe-.*'
   - 'vboxadd'
   - 'vboxadd-service'
   - 'vboxadd-x11'
