@@ -327,7 +327,7 @@ mod 'simp-sudosh',
 
 mod 'simp-svckill',
   :git => 'https://github.com/heliocentric/pupmod-simp-svckill',
-  :ref => 'master'
+  :ref => 'feature/SIMP2341'
 
 mod 'simp-tcpwrappers',
   :git => 'https://github.com/simp/pupmod-simp-tcpwrappers',
