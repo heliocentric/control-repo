@@ -27,7 +27,6 @@ node default {
 node mom1.test {
   $services = [
     "pe-orchestration-services",
-    "pe-activemq",
   ]
   service { $services: }
 }
