@@ -25,10 +25,6 @@ node default {
 
 }
 node mom1.test {
-  $services = [
-    "pe-orchestration-services",
-  ]
-  service { $services: }
 }
 node agent.test {
   #  include $hiera_include_classes
