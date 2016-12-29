@@ -27,7 +27,6 @@ node default {
 node mom1.test {
   $services = [
     "pe-puppetserver",
-    "pe-nginx",
     "pe-puppetdb",
     "pe-postgresql",
     "pe-orchestration-services",
