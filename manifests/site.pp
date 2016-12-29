@@ -25,8 +25,8 @@ node default {
 
 }
 node agent.test {
-  include $hiera_include_classes
+  #  include $hiera_include_classes
 }
 node mom2.test {
-  include $hiera_include_classes
+  #  include $hiera_include_classes
 }
