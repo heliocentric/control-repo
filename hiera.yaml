@@ -9,7 +9,6 @@ hierarchy:
         - name: "Compat path"
           backend: yaml
           paths:
-                  - 'distribution/%{simp_options_puppet_server_distribution}'
                   - 'hosts/%{trusted.certname}'
                   - 'hosts/%{::fqdn}'
                   - 'hosts/%{::hostname}'
