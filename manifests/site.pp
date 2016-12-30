@@ -32,6 +32,6 @@ node agent.test {
 node mom2.test {
   #  include $hiera_include_classes
 }
-$simp_options_puppet_server_distribution = simp::lookup("simp_options::puppet::server_distribution")
+$simp_options_puppet_server_distribution = simplib::lookup("simp_options::puppet::server_distribution")
 notify { "${simp_options_puppet_server_distribution}": }
 notify { "puppet master serverversion: $::serverversion": }
