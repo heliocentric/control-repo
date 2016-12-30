@@ -43,6 +43,7 @@ simplib::sudoers::default_entry:
     LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER
     LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
 ssh::server::conf::permitrootlogin: true
+simp_options::puppet::server_distribution: "PE"
 svckill::ignore:
   - 'vboxadd'
   - 'vboxadd-service'
