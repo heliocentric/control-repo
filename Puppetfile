@@ -134,7 +134,7 @@ mod 'simp-autofs',
   :ref => 'master'
 
 mod 'simp-clamav',
-  :git => 'https://github.com/heliocentric/pupmod-simp-clamav',
+  :git => 'https://github.com/simp/pupmod-simp-clamav',
   :ref => 'master'
 
 mod 'simp-simpcat',
@@ -259,7 +259,7 @@ mod 'simp-postfix',
 
 mod 'simp-pupmod',
   :git => 'https://github.com/heliocentric/pupmod-simp-pupmod',
-  :ref => 'master'
+  :ref => 'feature/SIMP-2337'
 
 mod 'simp-puppetdb',
   :git => 'https://github.com/simp/puppetlabs-puppetdb',
