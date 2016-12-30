@@ -33,6 +33,6 @@ node mom2.test {
   #  include $hiera_include_classes
 }
 $simp_options_puppet_server_distribution = simplib::lookup("simp_options::puppet::server_distribution")
-$test = simplib::lookup("test")
+$test = simplib::lookup("test". "blah")
 notify { "site.pp - ${test}": }
 notify { "puppet master serverversion: $::serverversion": }
