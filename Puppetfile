@@ -294,8 +294,8 @@ mod 'simp-simp_logstash',
   :ref => 'master'
 
 mod 'simp-simplib',
-  :git => 'https://github.com/simp/pupmod-simp-simplib',
-  :ref => 'master'
+  :git => 'https://github.com/heliocentric/pupmod-simp-simplib',
+  :ref => 'simp6-pe'
 
 mod 'simp-site',
   :git => 'https://github.com/simp/pupmod-simp-site',
