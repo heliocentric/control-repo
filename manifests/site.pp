@@ -31,11 +31,11 @@ if ($::fqdn != "mom1.test") {
   if ($::fqdn != "mom2.test") {
     @@host { "$::fqdn":
       ip  => $::ipaddress,
-      tag => [ 'auto'],
+      tag => [ 'auto2'],
     }
   }
 }
-Host <<| tag == 'auto' |>>
+Host <<| tag == 'auto2' |>>
 
 
 node default {
