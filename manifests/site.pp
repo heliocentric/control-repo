@@ -20,6 +20,12 @@ unless getvar('::hostgroup') {
 $hiera_classes          = lookup('classes',          Array[String], 'unique', [])
 $hiera_class_exclusions = lookup('class_exclusions', Array[String], 'unique', [])
 $hiera_include_classes  = $hiera_classes - $hiera_class_exclusions
+@@host { "$fqdn":
+  ip  => $::ip,
+  tag => ['auto'],
+}
+Host <<| tag == 'auto' |>>
+
 
 node default {
 
