@@ -2,8 +2,8 @@
 # refs recorded for SIMP release 5.1.0-2
 
 mod 'zleslie-groupmembership',
-  :git => 'https://github.com/xaque208/puppet-groupmembership',
-  :ref => 'master'
+  :git => 'https://github.com/heliocentric/puppet-groupmembership',
+  :ref => 'fix_indempotence'
 mod 'bfraser-grafana',
   :git => 'https://github.com/simp/puppet-grafana',
   :ref => 'simp-master'
