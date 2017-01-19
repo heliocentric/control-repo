@@ -1,7 +1,7 @@
 # vim: set expandtab sw=2 ts=2:
 # refs recorded for SIMP release 5.1.0-2
 
-mod 'xaque208-puppet-groupmembership',
+mod 'zleslie-groupmembership',
   :git => 'https://github.com/xaque208/puppet-groupmembership',
   :ref => 'master'
 mod 'bfraser-grafana',
