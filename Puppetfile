@@ -294,8 +294,8 @@ mod 'simp-simp_logstash',
   :ref => 'master'
 
 mod 'simp-simplib',
-  :git => 'https://github.com/simp/pupmod-simp-simplib',
-  :ref => 'master'
+  :git => 'https://github.com/heliocentric/pupmod-simp-simplib',
+  :ref => 'feature/SIMP-2507'
 
 mod 'simp-site',
   :git => 'https://github.com/simp/pupmod-simp-site',
@@ -327,7 +327,7 @@ mod 'simp-sudosh',
 
 mod 'simp-svckill',
   :git => 'https://github.com/heliocentric/pupmod-simp-svckill',
-  :ref => 'feature/SIMP-2342'
+  :ref => 'master'
 
 mod 'simp-tcpwrappers',
   :git => 'https://github.com/simp/pupmod-simp-tcpwrappers',
