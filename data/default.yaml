@@ -1,7 +1,7 @@
 # vim: set expandtab ts=2 sw=2:
 ---
 # SIMP Global Catalysts
-use_iptables : false
+use_iptables : true
 enable_pki   : false
 use_haveged  : false
 use_ldap     : false
