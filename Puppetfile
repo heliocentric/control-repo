@@ -1,6 +1,5 @@
 # vim: set expandtab sw=2 ts=2:
 # refs recorded for SIMP release 5.1.0-2
-mod 'apache'
 
 mod 'bfraser-grafana',
   :git => 'https://github.com/simp/puppet-grafana',
