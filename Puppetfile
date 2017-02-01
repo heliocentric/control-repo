@@ -278,7 +278,7 @@ mod 'simp-selinux',
   :ref => 'master'
 
 mod 'simp-simp',
-  :git => 'https://github.com/heliocentric/pupmod-simp-simp',
+  :git => 'https://github.com/simp/pupmod-simp-simp',
   :ref => 'master'
 
 mod 'simp-simp_elasticsearch',
