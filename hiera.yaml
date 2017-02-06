@@ -5,7 +5,7 @@ hierarchy:
         - name: "local overrides"
           backend: yaml
           datadir: '/data/hiera/%{::environment}/'
-          path: "test"
+          path: "common"
         - name: "Compat path"
           backend: yaml
           paths:
