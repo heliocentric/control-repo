@@ -4,8 +4,8 @@ datadir: data
 hierarchy:
         - name: "local overrides"
           backend: yaml
-          datadir: '/data/hiera/%{::environment}'
-          path: "common"
+          datadir: '/data/hiera'
+          path: "%{environment}/common"
         - name: "Compat path"
           backend: yaml
           paths:
