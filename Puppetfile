@@ -368,4 +368,4 @@ mod "consul",
   :ref => 'master'
 mod "simp-libkv",
   :git => 'https://github.com/heliocentric/pupmod-simp-libkv',
-  :ref => 'master'
+  :ref => 'develop'
