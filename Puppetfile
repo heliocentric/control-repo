@@ -363,6 +363,9 @@ mod 'simp-compliance_markup',
 mod 'epel',
   :git => 'https://github.com/stahnma/puppet-module-epel',
   :ref => '292ff3311d5348a2449a53f8643dd20e43be52f1'
+mod 'archive',
+  :git => 'https://github.com/voxpupuli/puppet-archive',
+  :ref => '62f42713403dd9102bb1ac687924ea00dab50741'
 mod "consul",
   :git => 'https://github.com/heliocentric/puppet-consul',
   :ref => 'master'
