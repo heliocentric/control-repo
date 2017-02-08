@@ -366,3 +366,6 @@ mod 'epel',
 mod "consul",
   :git => 'https://github.com/heliocentric/puppet-consul',
   :ref => 'master'
+mod "simp-libkv",
+  :git => 'https://github.com/heliocentric/pupmod-simp-libkv',
+  :ref => 'master'
