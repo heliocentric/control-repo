@@ -123,3 +123,4 @@ simp::yum::servers :
 
 # Management of Specific Classes
 simplib::runlevel : '3'
+libkv::url: consul://127.0.0.1:8500/simp
