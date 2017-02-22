@@ -259,7 +259,7 @@ mod 'simp-postfix',
 
 mod 'simp-pupmod',
   :git => 'https://github.com/heliocentric/pupmod-simp-pupmod',
-  :ref => 'feature/SIMP-2504'
+  :ref => 'feature/SIMP-2745'
 
 mod 'simp-puppetdb',
   :git => 'https://github.com/simp/puppetlabs-puppetdb',
