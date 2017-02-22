@@ -20,7 +20,7 @@ unless getvar('::hostgroup') {
 $hiera_classes          = lookup('classes',          Array[String], 'unique', [])
 $hiera_class_exclusions = lookup('class_exclusions', Array[String], 'unique', [])
 $hiera_include_classes  = $hiera_classes - $hiera_class_exclusions
-
+$simp_scenario          = 'poss'
 node default {
 
 }
