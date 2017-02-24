@@ -8,4 +8,3 @@
 this_is_an_example_key: 'that does nothing'
 ssh::server::conf::permitrootlogin: true
 ssh::server::conf::pam: true
-a
