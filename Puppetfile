@@ -258,7 +258,7 @@ mod 'simp-postfix',
   :ref => 'master'
 
 mod 'simp-pupmod',
-  :git => 'https://github.com/heliocentric/pupmod-simp-pupmod',
+  :git => 'https://github.com/simp/pupmod-simp-pupmod',
   :ref => 'master'
 
 mod 'simp-puppetdb',
