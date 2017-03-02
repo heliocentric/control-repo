@@ -258,8 +258,8 @@ mod 'simp-postfix',
   :ref => 'master'
 
 mod 'simp-pupmod',
-  :git => 'https://github.com/simp/pupmod-simp-pupmod',
-  :ref => 'master'
+  :git => 'https://github.com/heliocentric/pupmod-simp-pupmod',
+  :ref => 'feature/SIMP-2745'
 
 mod 'simp-puppetdb',
   :git => 'https://github.com/simp/puppetlabs-puppetdb',
@@ -294,8 +294,8 @@ mod 'simp-simp_logstash',
   :ref => 'master'
 
 mod 'simp-simplib',
-  :git => 'https://github.com/simp/pupmod-simp-simplib',
-  :ref => 'master'
+  :git => 'https://github.com/heliocentric/pupmod-simp-simplib',
+  :ref => 'feature/SIMP-2785'
 
 mod 'simp-site',
   :git => 'https://github.com/simp/pupmod-simp-site',
@@ -368,7 +368,13 @@ mod 'archive',
   :ref => '62f42713403dd9102bb1ac687924ea00dab50741'
 mod "consul",
   :git => 'https://github.com/heliocentric/puppet-consul',
+  :ref => 'feature/freebsd_support'
+mod 'simp-resolv',
+  :git => 'https://github.com/simp/pupmod-simp-resolv',
   :ref => 'master'
 mod "simp-libkv",
   :git => 'https://github.com/heliocentric/pupmod-simp-libkv',
   :ref => 'develop'
+mod 'simp-simp_options',
+  :git => 'https://github.com/heliocentric/pupmod-simp-simp_options',
+  :ref => 'feature/SIMP-2784'
