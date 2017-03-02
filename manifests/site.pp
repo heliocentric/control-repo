@@ -34,3 +34,4 @@ node mom2.test {
 }
 $testdata = lookup("testdata", { default_value => 'global scope' } )
 notify { "testdata - ${testdata}": }
+notify { "serverfacts - ${server_facts}": }
