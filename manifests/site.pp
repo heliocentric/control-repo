@@ -32,7 +32,3 @@ node agent.test {
 node mom2.test {
   #  include $hiera_include_classes
 }
-$testdata = lookup("testdata", { default_value => 'global scope' } )
-notify { "testdata - ${testdata}": }
-notify { "serverfacts - ${server_facts}": }
-include testzor
