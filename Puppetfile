@@ -295,7 +295,7 @@ mod 'simp-simp_logstash',
 
 mod 'simp-simplib',
   :git => 'https://github.com/heliocentric/pupmod-simp-simplib',
-  :ref => 'feature/SIMP-2785'
+  :ref => 'feature/SIMP-2858'
 
 mod 'simp-site',
   :git => 'https://github.com/simp/pupmod-simp-site',
