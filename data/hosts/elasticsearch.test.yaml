@@ -2,6 +2,5 @@
 simp::scenario: poss
 simp::classes:
   - "--ssh"
-  - "--pupmod"
 logstash::logstash_user: 'logstash'
 logstash::logstash_group: 'logstash'
