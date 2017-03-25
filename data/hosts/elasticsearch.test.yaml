@@ -1,6 +1,6 @@
 ---
 simp::scenario: simp
 simp::classes:
-  - --ssh
+  - "--ssh"
 logstash::logstash_user: 'logstash'
 logstash::logstash_group: 'logstash'
