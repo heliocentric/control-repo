@@ -1,4 +1,6 @@
 ---
+classes:
+  - simp
 simp_elasticsearch::cluster_name: 'logstash'
 simp_elasticsearch::bind_host: "%{::ipaddress}"
 logstash::logstash_user: 'logstash'

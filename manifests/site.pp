@@ -26,6 +26,9 @@ node default {
 }
 node mom1.test {
 }
+node elasticsearch.test {
+  include simp
+}
 node agent.test {
   #  include $hiera_include_classes
 }
