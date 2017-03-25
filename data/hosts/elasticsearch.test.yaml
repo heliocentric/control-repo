@@ -1,8 +1,6 @@
 ---
 simp::scenario: simp
 simp::classes:
-   - --sssd
-simp_elasticsearch::cluster_name: 'logstash'
-simp_elasticsearch::bind_host: "%{::ipaddress}"
+   - --ssh
 logstash::logstash_user: 'logstash'
 logstash::logstash_group: 'logstash'
