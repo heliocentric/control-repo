@@ -379,3 +379,6 @@ mod "simp-libkv",
 mod 'simp-simp_options',
   :git => 'https://github.com/heliocentric/pupmod-simp-simp_options',
   :ref => 'feature/SIMP-2784'
+moduledir 'delegated-data'
+mod 'delegated-acme',
+	:git => 'https://github.com/baltimore-puppet-users-group/hierav5-acme-delegated.git'
